@@ -1,12 +1,11 @@
-{-# LANGUAGE DeriveDataTypeable, ScopedTypeVariables #-}
 -----------------------------------------------------------------------------
 -- |
--- Module      :  Codec.PerfectSecretSharing
+-- Module      :  Crypto.SecretSharing
 -- Copyright   :  Peter Robinson 2014
 -- License     :  LGPL
 -- 
 -- Maintainer  :  Peter Robinson <peter.robinson@monoid.at>
--- Stability   :  stable
+-- Stability   :  experimental
 -- Portability :  portable
 -- 
 -- Implementation of an (@m@,@n@)-threshold secret sharing scheme.
@@ -32,6 +31,6 @@
 --
 -----------------------------------------------------------------------------
 
-module Codec.PerfectSecretSharing( encode, decode, Share )
+module Crypto.SecretSharing( encode, decode, Share )
 where
-import Codec.PerfectSecretSharing.Internal
+import Crypto.SecretSharing.Internal
