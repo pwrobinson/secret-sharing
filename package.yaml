@@ -1,0 +1,40 @@
+name:                secret-sharing
+version:             1.0.1.1
+github:              "pwrobinson/secret-sharing"
+license:             LGPL-2.1
+author:              "Peter Robinson"
+maintainer:          "pwr@lowerbound.io"
+copyright:           "2014-2020 Peter Robinson"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+synopsis:            Information-theoretic secure secret sharing
+category:            Data, Cryptography
+
+description:         Please see the README on GitHub at <https://github.com/pwrobinson/secret-sharing#readme>
+
+
+dependencies:
+- base >=4.6 && < 5
+- bytestring >= 0.10.0.2
+- dice-entropy-conduit >= 1.0.0.0
+- binary >=0.5.1.1
+- vector >=0.10.11.0
+- finite-field >=0.8.0
+
+library:
+  source-dirs: src
+
+tests:
+  secret-sharing-test:
+    main: Test.hs
+    source-dirs: test
+    dependencies:
+      - base >= 4 && < 5
+      - bytestring >=0.10.0.2
+      - QuickCheck >= 2.4
+      - secret-sharing
+      - test-framework >= 0.4.1
+      - test-framework-quickcheck2
