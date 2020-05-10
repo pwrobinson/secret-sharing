@@ -1,9 +1,9 @@
 name:                secret-sharing
-version:             1.0.1.1
+version:             1.0.1.2
 github:              "pwrobinson/secret-sharing"
 license:             LGPL-2.1
 author:              "Peter Robinson"
-maintainer:          "pwr@lowerbound.io"
+maintainer:          "peter@lowerbound.io"
 copyright:           "2014-2020 Peter Robinson"
 
 extra-source-files:

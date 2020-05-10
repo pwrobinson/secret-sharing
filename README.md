@@ -8,7 +8,7 @@ to `m-1` shares does not reveal any information about the secret `b`.
 Suppose that you want to split the string "my secret data" into n=5 shares such that
 at least m=3 shares are necessary to reconstruct the secret.
 
-~~~
+~~~ {.haskell}
 ❯ :m + Data.ByteString.Lazy.Char8 Crypto.SecretSharing
 ❯ let secret = pack "my secret message!"
 ❯ shares <- encode 3 5 secret

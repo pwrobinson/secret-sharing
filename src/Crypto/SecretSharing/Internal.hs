@@ -5,7 +5,6 @@
 -- Copyright   :  Peter Robinson 2014
 -- License     :  LGPL
 --
--- Maintainer  :  Peter Robinson <peter.robinson@monoid.at>
 -- Stability   :  experimental
 -- Portability :  portable
 --
@@ -158,4 +157,3 @@ evalPolynomial coeffs x =
   foldr (\c res -> c + (x * res)) 0 coeffs
 --  let clist = zipWith (\pow c -> (\x -> c * (x^pow))) [0..] coeffs
 --  in L.foldl' (+) 0 [ c x | c <- clist ]
-
